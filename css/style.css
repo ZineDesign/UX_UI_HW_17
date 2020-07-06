@@ -11,6 +11,7 @@ body{
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    height: 100px;
 }
 
 .nav-item{
@@ -51,39 +52,107 @@ svg{
     padding: 10px;
 }
 
-
-
-
-
-.sidebar{
+aside{
+    width: 5%;
+    height: calc(100vh - 120px);
+    /*background-color: blue;*/
+    float: left;
     display: flex;
-    
-    background: orange;
-     /* how to calculate remaing vh (sidebar height-navbar height) */
-    width: 10%;
-    position: relative;
-    
-    
-    
-   
+    justify-content: center;
+    align-items: center;
     
 }
 
 .aboutme{
+    padding:0;
+    margin: 0;
+}
+
+.aboutme p{
     transform: rotate(90deg);
-    /* No wrap text */
-    white-space: nowrap;
-    font-family: futura-pt, sans-serif;
-    position: absolute;
-    
-    float: left;
     text-align: center;
+    /*background-color: orange;*/
+    width:100%;
+    margin: 0 auto;
     font-size: 70px;
-    top: 50%;
-    left: -25%;
-    background-color: green;
-    
+    font-family: futura-pt, sans-serif;
+    white-space: nowrap;
+}
+
+section{
+    width: 90%;
+    height: calc(100vh - 120px);
+    /*background-color: green;*/
+    display: flex;
+    flex-direction: column;
+}
+
+.intro{
+    padding: 20px 100px;
+    width: 60%;
+}
+
+.intro h1{
+    font-family: futura-pt, sans-serif;
+    font-size: 45px;
+    font-weight: 400;
+}
+
+p{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.skills{
+    padding: 0 100px;
+    margin: 0;
+    position: relative;
+}
+
+.skillstitle h1{
+    margin: 0px;
+    font-family: futura-pt, sans-serif;
+    font-size: 45px;
+    font-weight: 400;
     
 }
 
+
+li{
+    list-style-type: none;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    padding-left: 0;
+    margin: 0;
+   
+}
+
+.skillset{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-row: 1r;
+}
+
+h2{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+
+#resume{
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    background-color: white;
+    border-radius: 6px;
+    border: none;
+    height: 50px;
+    width: 160px;
+    padding: 0 20px;
+    position: absolute;
+    bottom: 100px;
+    right: 270px;
+    
+}
 
