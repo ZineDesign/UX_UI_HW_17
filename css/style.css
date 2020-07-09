@@ -14,6 +14,10 @@ body{
     height: 100px;
 }
 
+.wrap{
+    display: flex;
+}
+
 .nav-item{
     font-family: futura-pt, sans-serif;
     font-size: 30px;
@@ -40,6 +44,14 @@ svg{
     padding: 5px;
 }
 
+#projects:hover{
+    color: #0876D0;
+}
+
+#projects:hover path{
+    stroke: #0876D0 !important;
+}
+
 #menu{
     display: flex;
     flex-direction: left;
@@ -52,11 +64,12 @@ svg{
     padding: 10px;
 }
 
+
 aside{
-    width: 5%;
+    width: 10%;
     height: calc(100vh - 120px);
     /*background-color: blue;*/
-    float: left;
+    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -64,8 +77,8 @@ aside{
 }
 
 .aboutme{
-    padding:0;
-    margin: 0;
+    margin: auto;
+    
 }
 
 .aboutme p{
@@ -92,8 +105,8 @@ section{
 }
 
 .intro{
-    padding: 20px 100px;
-    width: 60%;
+    padding: 20px 50px;
+    width: 65%;
 }
 
 .intro h1{
@@ -109,7 +122,7 @@ p{
 }
 
 .skills{
-    padding: 0 100px;
+    padding: 0 50px;
     margin: 0;
     position: relative;
 }
@@ -117,8 +130,9 @@ p{
 .skillstitle h1{
     margin: 0px;
     font-family: futura-pt, sans-serif;
-    font-size: 45px;
-    font-weight: 400;
+    font-size: 35px;
+    font-weight: 600;
+    color: #0876D0;
     
 }
 
@@ -143,6 +157,7 @@ ul, li{
 h2{
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
+    font-size: 25px;
     margin-bottom: 5px;
 }
 
@@ -150,7 +165,8 @@ h2{
 #resume{
     font-family: 'Poppins', sans-serif;
     font-size: 20px;
-    background-color: white;
+    background-color:#0876D0;
+    color: white;
     border-radius: 6px;
     border: none;
     height: 50px;
@@ -158,6 +174,13 @@ h2{
     padding: 0 20px;
     position: absolute;
     bottom: 100px;
-    right: 270px;   
+    right: 270px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
+#resume:hover {
+    
+    background-color: #139ff7;
+    
+}
